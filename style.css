@@ -37,3 +37,25 @@ body {
   align-items: center;
   position: relative;
 }
+
+.clock ul li {
+  list-style: none;
+  position: absolute;
+  text-align: center;
+  transform: rotate(calc(30deg * var(--i)));
+  inset: 5px;
+}
+
+.clock ul li span {
+  transform: rotate(calc(-30deg * var(--i)));
+  display: inline-block;
+}
+
+.clock::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50px;
+  position: absolute;
+}

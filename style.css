@@ -59,3 +59,18 @@ body {
   border-radius: 50px;
   position: absolute;
 }
+
+.needle{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.needle span{
+    width: 5px;
+    height: var(--h);
+    background-color: var(--clr);
+    position: absolute;
+    border-radius: 5px;
+
+}
